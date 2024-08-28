@@ -1,0 +1,20 @@
+{
+  "name": "bootstrap-advanced",
+  "version": "1.0.0",
+  "description": "Simple workflow for working with and customizing Bootstrap 5",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "npx sass --no-source-map --watch scss:css",
+    "devserver": "live-server",
+    "start": "npx npm-run-all --parallel devserver watch:sass",
+    "compile:sass": "npx sass --no-source-map scss:css"
+  },
+  "author": "Ahmed Ibrahim",
+  "license": "ISC",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^6.6.0",
+    "bootstrap": "^5.3.3",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.77.8"
+  }
+}
